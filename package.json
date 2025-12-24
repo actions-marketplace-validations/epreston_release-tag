@@ -14,7 +14,7 @@
   "exports": {
     ".": "./dist/index.js"
   },
-  "packageManager": "npm@10.7.0",
+  "packageManager": "npm@11.7.0",
   "engines": {
     "node": "^20.0.0 || >=22.0.0"
   },
