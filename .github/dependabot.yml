@@ -20,12 +20,15 @@ updates:
     schedule:
       interval: weekly
     groups:
+      # Less likely to change published bundle.
       npm-development:
         dependency-type: development
         update-types:
           - minor
           - patch
-      npm-production:
-        dependency-type: production
-        update-types:
-          - patch
+
+      # Need to be updated and bundled manually.
+      # npm-production:
+      #   dependency-type: production
+      #   update-types:
+      #     - patch
