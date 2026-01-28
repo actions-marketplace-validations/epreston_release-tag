@@ -1,6 +1,6 @@
-const core = require('@actions/core')
-const { getOctokit, context } = require('@actions/github')
-const fs = require('node:fs');
+import * as core from '@actions/core';
+import { getOctokit, context } from '@actions/github';
+import * as fs from 'node:fs';
 
 async function run() {
   try {
