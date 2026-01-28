@@ -5,7 +5,10 @@
   "description": "Create a release for a tag in the repository",
   "author": "Ed Preston",
   "license": "MIT",
-  "repository": "github:@epreston/release-tag",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epreston/release-tag.git"
+  },
   "keywords": [
     "GitHub",
     "Actions",
