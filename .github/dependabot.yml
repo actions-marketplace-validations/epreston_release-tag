@@ -3,32 +3,28 @@
 
 version: 2
 updates:
-  # Maintain dependencies for GitHub Actions
+  # gitHub actions dependencies
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
-    groups:
-      actions-minor:
-        update-types:
-          - minor
-          - patch
 
-  # Maintain dependencies for npm
+  # npm dependencies
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+
     groups:
-      # Less likely to change published bundle.
-      npm-development:
+      npm-dev:
         dependency-type: development
         update-types:
           - minor
           - patch
 
       # Need to be updated and bundled manually.
-      # npm-production:
+      # npm-prod:
       #   dependency-type: production
       #   update-types:
+      #     - minor
       #     - patch
